@@ -160,7 +160,7 @@ function Gestion() {
                     {/* ESTA ES LA BARRA DE BUSQUEDA */}
 
                     {/* ESTA ES LA TABLA DONDE ESTARAN LOS PACIENTES */}
-                    <div className="tablaResponsive">
+                    <div className="tablaResponsive table-responsive">
 
                         <table className="tablaGeneral">
 
