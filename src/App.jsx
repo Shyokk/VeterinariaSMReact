@@ -16,6 +16,10 @@ import Agendar from "./pages/Agendar";
 import CrearFicha from "./pages/CrearFicha";
 import Gestion from "./pages/Gestion";
 import Historial from "./pages/Historial";
+import NuevoDiagnostico from "./pages/NuevoDiagnostico";
+import NuevaReceta from "./pages/NuevaReceta";
+import NuevaVacuna from "./pages/NuevaVacuna";
+import Pacientes from "./pages/Pacientes";
 import NoEncontrada from "./pages/NoEncontrada";
 
 function App() {
@@ -40,6 +44,13 @@ function App() {
                 <Route path="/gestion" element={<Gestion />} />
                 <Route path="/historial" element={<Historial />} />
                 <Route path="/historial/:codUnico" element={<Historial />} />
+                <Route path="/nuevoDiagnostico" element={<NuevoDiagnostico />} />
+                <Route path="/nuevoDiagnostico/:codUnico" element={<NuevoDiagnostico />} />
+                <Route path="/nuevaReceta" element={<NuevaReceta />} />
+                <Route path="/nuevaReceta/:codUnico" element={<NuevaReceta />} />
+                <Route path="/nuevaVacuna" element={<NuevaVacuna />} />
+                <Route path="/nuevaVacuna/:codUnico" element={<NuevaVacuna />} />
+                <Route path="/pacientes" element={<Pacientes />} />
                 <Route path="*" element={<NoEncontrada />} />
             </Routes>
 
