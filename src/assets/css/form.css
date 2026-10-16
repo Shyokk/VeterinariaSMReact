@@ -73,7 +73,8 @@
 }
 
 /* Cada campo se adapta sin importar cuantos existan */
-.campo-formulario {
+/* EN REACT TODOS LOS CSS SON GLOBALES, CON :where SOLO APLICA A ESTOS FORMULARIOS SIN CAMBIAR LA ESPECIFICIDAD */
+:where(.formulario-normalizado) .campo-formulario {
   width: 100%;
   min-width: 0;
   display: flex;
@@ -82,7 +83,7 @@
   box-sizing: border-box;
 }
 
-.campo-formulario label,
+:where(.formulario-normalizado) .campo-formulario label,
 .formulario-normalizado > label {
   min-width: 0;
   color: var(--form-color-texto);

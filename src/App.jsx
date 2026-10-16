@@ -14,6 +14,8 @@ import Usuarios from "./pages/Usuarios";
 import NuevoExamen from "./pages/NuevoExamen";
 import Agendar from "./pages/Agendar";
 import CrearFicha from "./pages/CrearFicha";
+import Gestion from "./pages/Gestion";
+import Historial from "./pages/Historial";
 import NoEncontrada from "./pages/NoEncontrada";
 
 function App() {
@@ -32,8 +34,12 @@ function App() {
                 <Route path="/reportes" element={<Reportes />} />
                 <Route path="/usuarios" element={<Usuarios />} />
                 <Route path="/nuevoExamen" element={<NuevoExamen />} />
+                <Route path="/nuevoExamen/:codUnico" element={<NuevoExamen />} />
                 <Route path="/agendar" element={<Agendar />} />
                 <Route path="/crearFicha" element={<CrearFicha />} />
+                <Route path="/gestion" element={<Gestion />} />
+                <Route path="/historial" element={<Historial />} />
+                <Route path="/historial/:codUnico" element={<Historial />} />
                 <Route path="*" element={<NoEncontrada />} />
             </Routes>
 
