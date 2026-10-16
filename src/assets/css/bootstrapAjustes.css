@@ -1,0 +1,291 @@
+/* Este css es para que Bootstrap no cambie el diseño que ya teniamos */
+/* Bootstrap trae un "reboot" que le cambia los estilos a las etiquetas (h1, p, label, button, etc) */
+/* Con revert las etiquetas vuelven al estilo normal del navegador, como estaban en la version html */
+/* Este css se carga despues de bootstrap y antes de nuestros css (ver main.jsx) */
+
+
+/* Este será para el bloque de las etiquetas generales */
+*,
+*::before,
+*::after {
+  box-sizing: revert; /* Bootstrap le pone border-box a todo */
+}
+
+:root {
+  scroll-behavior: revert;
+}
+
+body {
+  margin: revert;
+  font-family: revert;
+  font-size: revert;
+  font-weight: revert;
+  line-height: revert;
+  color: revert;
+  text-align: revert;
+  background-color: revert; /* El color de fondo lo sigue poniendo estilos.css */
+  -webkit-text-size-adjust: revert;
+  -webkit-tap-highlight-color: revert;
+}
+/* Este será para el bloque de las etiquetas generales */
+
+
+/* Este será para el bloque de los textos */
+h1,
+h2,
+h3 {
+  margin-top: revert;
+  margin-bottom: revert;
+  font-size: revert;
+  font-weight: revert;
+  line-height: revert;
+  color: revert;
+}
+
+p {
+  margin-top: revert;
+  margin-bottom: revert;
+}
+
+address {
+  margin-bottom: revert;
+  font-style: revert;
+  line-height: revert;
+}
+
+ul {
+  margin-top: revert;
+  margin-bottom: revert;
+  padding-left: revert;
+}
+
+strong {
+  font-weight: revert;
+}
+
+small {
+  font-size: revert;
+}
+
+a {
+  color: revert;
+  text-decoration: revert; /* Igual estilos.css le quita el subrayado a los links */
+}
+
+img {
+  vertical-align: revert;
+}
+/* Este será para el bloque de los textos */
+
+
+/* Este será para el bloque de las tablas */
+table {
+  caption-side: revert;
+  border-collapse: revert;
+}
+
+th {
+  text-align: revert;
+}
+
+thead,
+tbody,
+tr,
+td,
+th {
+  border-color: revert;
+  border-style: revert;
+  border-width: revert;
+}
+/* Este será para el bloque de las tablas */
+
+
+/* Este será para el bloque de los formularios */
+label {
+  display: revert;
+}
+
+button {
+  border-radius: revert;
+}
+
+button:focus:not(:focus-visible) {
+  outline: revert;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: revert;
+  font-family: revert;
+  font-size: revert;
+  line-height: revert;
+}
+
+button,
+select {
+  text-transform: revert;
+}
+
+select {
+  word-wrap: revert;
+}
+
+button,
+[type=button],
+[type=submit] {
+  -webkit-appearance: revert;
+}
+
+button:not(:disabled),
+[type=button]:not(:disabled),
+[type=submit]:not(:disabled) {
+  cursor: revert;
+}
+
+::-moz-focus-inner { /* Esto es solo para Firefox */
+  padding: revert;
+  border-style: revert;
+}
+
+textarea {
+  resize: revert;
+}
+
+fieldset {
+  min-width: revert;
+  padding: revert;
+  margin: revert;
+  border: revert;
+}
+
+legend {
+  float: revert;
+  width: revert;
+  padding: revert;
+  margin-bottom: revert;
+  font-size: revert;
+  line-height: revert;
+}
+
+legend + * {
+  clear: revert;
+}
+
+::-webkit-datetime-edit-fields-wrapper, /* Esto es para los input de fecha y hora */
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field {
+  padding: revert;
+}
+
+::-webkit-inner-spin-button { /* Esto es para las flechas del input de numero */
+  height: revert;
+}
+/* Este será para el bloque de los formularios */
+
+
+
+/* ESTA PARTE ES PARA EL HEADER CON EL Navbar DE REACT BOOTSTRAP */
+/* El menu lo sigue manejando headFoot.css con la clase menu-abierto */
+/* Aqui solo se le quitan los espacios, tamaños y colores que le pone Bootstrap */
+
+.navbar {
+  --bs-navbar-nav-link-padding-x: 0; /* Variable de bootstrap para el espacio de los links */
+  flex-wrap: nowrap; /* Para que el menu no baje a otra linea */
+}
+
+.navbar-brand { /* Para el logo y el nombre de la veterinaria */
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: inherit;
+}
+
+.navbar-toggler { /* Para el boton hamburguesa, su diseño esta en .menu-toggle */
+  font-size: .84rem; /* El mismo valor que le da estilos.css a los button */
+  line-height: revert;
+  transition: revert;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none; /* Bootstrap le pone un borde al hacer click */
+}
+
+.cabecera .navbar-collapse {
+  display: contents !important; /* Asi el Collapse no esconde ni mueve el menu, lo hace .menu-abierto como antes */
+}
+
+.navbar-nav { /* Para la lista del menu */
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0;
+  flex-direction: row; /* En celular headFoot.css lo cambia a column */
+}
+
+.nav-link { /* Para los links del menu, asi se ven como los links que teniamos */
+  display: revert;
+  font-size: revert;
+  font-weight: revert;
+  color: inherit;
+  background: revert;
+  border: revert;
+  transition: revert;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: inherit;
+}
+
+.nav-link:focus-visible {
+  outline: revert;
+  box-shadow: none;
+}
+
+.navbar-nav .nav-link.active, /* Bootstrap le cambia el color al link de la pagina actual */
+.navbar-nav .nav-link.show {
+  color: inherit;
+}
+
+/* ESTA PARTE ES PARA EL HEADER CON EL Navbar DE REACT BOOTSTRAP */
+
+
+
+/* Este será para el bloque de las tarjetas de inicio con Row y Col */
+/* Antes eran siempre 4 columnas y en celular se salian de la pantalla */
+/* Ahora las columnas las pone Col (xs={6} sm={4} md={3}) y se deja el mismo espacio de 3% */
+.grill-tarjeta.row {
+  --bs-gutter-x: min(3%, 38.4px); /* El espacio entre tarjetas, como maximo el 3% de 1280px */
+  --bs-gutter-y: .75rem; /* El espacio entre las filas */
+  display: flex;
+  gap: 0;
+  width: calc(100% + var(--bs-gutter-x));
+  max-width: calc(1280px + var(--bs-gutter-x));
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: 0;
+  margin-left: max(calc(-.5 * var(--bs-gutter-x)), calc((100% - 1280px - var(--bs-gutter-x)) / 2)); /* Para que quede centrado igual que antes */
+}
+
+.row > * {
+  box-sizing: border-box; /* Las columnas de bootstrap lo necesitan para que quepan en la fila */
+}
+/* Este será para el bloque de las tarjetas de inicio con Row y Col */
+
+
+
+/* Esto será para las tablas con table-responsive de bootstrap */
+.tablaResponsive.table-responsive {
+  overflow-x: auto; /* Asi en celular la tabla se puede mover hacia el lado y no queda cortada */
+}
+/* Esto será para las tablas con table-responsive de bootstrap */
