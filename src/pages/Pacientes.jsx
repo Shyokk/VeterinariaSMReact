@@ -305,7 +305,7 @@ function Pacientes() {
 
                 </div>
 
-                <div className="tablaResponsive">
+                <div className="tablaResponsive table-responsive">
 
                     <table className="tablaGeneral">
 
