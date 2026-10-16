@@ -1,5 +1,6 @@
 // ESTA PAGINA ES LA PORTADA CON LAS TARJETAS DE ACCESO (ANTES index.html)
 
+import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Inicio() {
@@ -7,10 +8,11 @@ function Inicio() {
     return (
         <main className="contenido-main">
 
-            <section className="grill-tarjeta">
+            {/* GRILLA DE REACT BOOTSTRAP: 2 COLUMNAS EN CELULAR, 3 DESDE 576px Y 4 DESDE 768px */}
+            <Row as="section" className="grill-tarjeta">
 
 
-                <div>
+                <Col xs={6} sm={4} md={3}>
                     <Link to="/agendar">
 
                         <div className="tarjeta">
@@ -19,9 +21,9 @@ function Inicio() {
                         </div>
 
                     </Link>
-                </div>
+                </Col>
 
-                <div>
+                <Col xs={6} sm={4} md={3}>
                     <Link to="/login">
 
                         <div className="tarjeta">
@@ -30,9 +32,9 @@ function Inicio() {
                         </div>
 
                     </Link>
-                </div>
+                </Col>
 
-                <div>
+                <Col xs={6} sm={4} md={3}>
                     <Link to="/misMascotas">
 
                         <div className="tarjeta">
@@ -41,9 +43,9 @@ function Inicio() {
                         </div>
 
                     </Link>
-                </div>
+                </Col>
 
-                <div>
+                <Col xs={6} sm={4} md={3}>
                     <Link to="/nosotros">
 
                         <div className="tarjeta">
@@ -52,9 +54,9 @@ function Inicio() {
                         </div>
 
                     </Link>
-                </div>
+                </Col>
 
-                <div>
+                <Col xs={6} sm={4} md={3}>
                     <Link to="/pacientes">
 
                         <div className="tarjeta">
@@ -63,9 +65,9 @@ function Inicio() {
                         </div>
 
                     </Link>
-                </div>
+                </Col>
 
-                <div>
+                <Col xs={6} sm={4} md={3}>
                     <Link to="/gestion">
 
                         <div className="tarjeta">
@@ -74,9 +76,9 @@ function Inicio() {
                         </div>
 
                     </Link>
-                </div>
+                </Col>
 
-                <div>
+                <Col xs={6} sm={4} md={3}>
                     <Link to="/nuevaReceta">
 
                         <div className="tarjeta">
@@ -85,9 +87,9 @@ function Inicio() {
                         </div>
 
                     </Link>
-                </div>
+                </Col>
 
-                <div>
+                <Col xs={6} sm={4} md={3}>
                     <Link to="/nuevaVacuna">
 
                         <div className="tarjeta">
@@ -96,9 +98,9 @@ function Inicio() {
                         </div>
 
                     </Link>
-                </div>
+                </Col>
 
-                <div>
+                <Col xs={6} sm={4} md={3}>
                     <Link to="/nuevoDiagnostico">
 
                         <div className="tarjeta">
@@ -107,9 +109,9 @@ function Inicio() {
                         </div>
 
                     </Link>
-                </div>
+                </Col>
 
-                <div>
+                <Col xs={6} sm={4} md={3}>
                     <Link to="/nuevoExamen">
 
                         <div className="tarjeta">
@@ -118,9 +120,9 @@ function Inicio() {
                         </div>
 
                     </Link>
-                </div>
+                </Col>
 
-            </section>
+            </Row>
 
         </main>
     );
