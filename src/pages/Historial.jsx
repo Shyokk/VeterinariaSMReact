@@ -145,7 +145,7 @@ function Historial() {
 
                             </div>
 
-                            <div className="tablaResponsive">
+                            <div className="tablaResponsive table-responsive">
 
                                 <table className="tablaGeneral">
 
@@ -238,7 +238,7 @@ function Historial() {
 
                             </div>
 
-                            <div className="tablaResponsive">
+                            <div className="tablaResponsive table-responsive">
 
                                 <table className="tablaGeneral">
 
@@ -328,7 +328,7 @@ function Historial() {
 
                             </div>
 
-                            <div className="tablaResponsive">
+                            <div className="tablaResponsive table-responsive">
                                 <table className="tablaGeneral">
 
                                     <thead>
