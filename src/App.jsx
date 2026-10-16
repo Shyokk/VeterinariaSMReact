@@ -12,6 +12,8 @@ import Perfil from "./pages/Perfil";
 import Reportes from "./pages/Reportes";
 import Usuarios from "./pages/Usuarios";
 import NuevoExamen from "./pages/NuevoExamen";
+import Agendar from "./pages/Agendar";
+import CrearFicha from "./pages/CrearFicha";
 import NoEncontrada from "./pages/NoEncontrada";
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
                 <Route path="/reportes" element={<Reportes />} />
                 <Route path="/usuarios" element={<Usuarios />} />
                 <Route path="/nuevoExamen" element={<NuevoExamen />} />
+                <Route path="/agendar" element={<Agendar />} />
+                <Route path="/crearFicha" element={<CrearFicha />} />
                 <Route path="*" element={<NoEncontrada />} />
             </Routes>
 

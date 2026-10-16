@@ -33,5 +33,7 @@ src/main.jsx          inicia React, BrowserRouter y carga los CSS
 src/App.jsx           header, rutas y footer
 src/assets/css        hojas de estilo del proyecto original
 src/components        piezas reutilizables (Header, Footer)
+src/core              almacenamiento en localStorage y conversión de datos
+src/validaciones      validaciones de fecha y hora para agendar
 src/pages             una página por cada HTML original
 ```
