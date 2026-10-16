@@ -1,13 +1,5 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* EL DIV ROOT DE REACT NO EXISTIA EN EL HTML ORIGINAL, CON ESTO EL HEADER, EL MAIN Y EL FOOTER
+   SE COMPORTAN COMO HIJOS DIRECTOS DEL BODY Y EL FOOTER SIGUE QUEDANDO ABAJO */
+#root {
+    display: contents;
 }
